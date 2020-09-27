@@ -1,7 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Container, { Button } from 'react-bootstrap';
+import Home from "./Components/Home"
+import Container from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
@@ -11,7 +18,6 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button>Sign In</Button>
         <a
           className="App-link"
           href="https://reactjs.org"
