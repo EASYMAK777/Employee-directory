@@ -1,9 +1,13 @@
 import React from 'react';
 
-export default function Directory() {
+function Directory(props) {
     return (
-        <div>
-            <h1>DIRECTORY-PAGE</h1>
-        </div>
+        <ul className = "directory-list">
+            <li>
+
+            </li>
+        </ul>
     );
 }
+
+export default Directory;
