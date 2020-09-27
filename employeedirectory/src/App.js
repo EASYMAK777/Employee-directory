@@ -40,7 +40,7 @@ function App() {
               <Table striped bordered hover size="sm">
                 <thead>
                   <tr>
-                    <th>#</th>
+                    <th>ID #</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Username</th>
