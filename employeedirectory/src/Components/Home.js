@@ -6,6 +6,7 @@ export default function Home() {
             <div className = "container">
                 <div className = "jumbotron">
                     <h1>Welcome to the Greed Corp Employee Directory!</h1>
+                    <h2>Please sign up and log in to use the directory.</h2>
                 </div>
 
             </div>

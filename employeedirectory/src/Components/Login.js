@@ -6,7 +6,7 @@ export default function Login() {
             <div className = "container">
                 <div className = "jumbotron">
                     <h1>Welcome to the Greed Corp Employee Directory!</h1>
-                    <h2>Please enter Email and Password to use the app0</h2>
+                    <h2>Please enter Email and Password to use the app</h2>
                 </div>
 
             </div>
