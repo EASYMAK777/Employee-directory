@@ -1,17 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from "./Components/Home";
-import Login from "./Components/Login";
-import Register from "./Components/Register";
-import Directory from "./Components/Directory";
-import Container from 'react-bootstrap';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
 
 function App() {
   return (
