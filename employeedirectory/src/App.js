@@ -1,30 +1,8 @@
-import React from 'react';
-import Header from "./Components/Header";
-import DirectoryContainer from "./Components/DirectoryContainer"
-
-
-
-
-
+import React from "react";
+import SearchResultContainer from "./components/SearchResultContainer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="Container">
-        
-        
-        <Header/>
-        <DirectoryContainer />
-
-
-
-
-
-
-
-      </header>
-    </div>
-  );
+  return <SearchResultContainer />;
 }
 
 export default App;
