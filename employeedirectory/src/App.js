@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "./Components/Header";
-import Directory from "./Components/Directory"
+import DirectoryContainer from "./Components/DirectoryContainer"
+
 
 
 
@@ -13,7 +14,7 @@ function App() {
         
         
         <Header/>
-        <Directory/>
+        <DirectoryContainer />
 
 
 
