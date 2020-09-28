@@ -14,7 +14,7 @@ class DirectoryContainer extends Component {
   };
 
   componentDidMount() {
-    this.searchEmployees("movies");
+    this.searchEmployees("employees");
   }
 
   searchEmployees = query => {
@@ -46,8 +46,8 @@ class DirectoryContainer extends Component {
               heading={this.state.result.name || "Search for an Employee to Begin"}
             >
               <EmployeeDetail
-                name={this.state.result.name}
-                src={this.state.result.location}
+                dob={this.state.result.dob}
+                location={this.state.result.location}
                 email={this.state.result.email}
                 gender={this.state.result.gender}
                 picture={this.state.result.picture}
