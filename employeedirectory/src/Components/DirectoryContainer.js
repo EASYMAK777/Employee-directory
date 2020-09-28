@@ -4,20 +4,20 @@ import Row from "./Row";
 import Col from "./Col";
 import Card from "./Card";
 import SearchForm from "./SearchForm";
-import MovieDetail from "./MovieDetail";
+import EmployeeDetail from "./EmployeeDetail";
 import API from "../utils/API";
 
-class OmdbContainer extends Component {
+class DirectoryContainer extends Component {
   state = {
     result: {},
     search: ""
   };
 
   componentDidMount() {
-    this.searchMovies("movies");
+    this.searchEmployees("movies");
   }
 
-  searchMovies = query => {
+  searchEmployees = query => {
     API.search(query)
       .then(res => this.setState({ result: res.data }))
       .catch(err => console.log(err));
@@ -34,7 +34,7 @@ class OmdbContainer extends Component {
   // When the form is submitted, search the Giphy API for `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
-    this.searchMovies(this.state.search);
+    this.searchEmployees(this.state.search);
   };
 
   render() {
@@ -43,14 +43,14 @@ class OmdbContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search for a Movie to Begin"}
+              heading={this.state.result.name || "Search for an Employee to Begin"}
             >
-              <MovieDetail
-                title={this.state.result.Title}
-                src={this.state.result.Poster}
-                director={this.state.result.Director}
-                genre={this.state.result.Genre}
-                released={this.state.result.Released}
+              <EmployeeDetail
+                name={this.state.result.name}
+                src={this.state.result.location}
+                email={this.state.result.email}
+                gender={this.state.result.gender}
+                picture={this.state.result.picture}
               />
             </Card>
           </Col>
@@ -69,4 +69,4 @@ class OmdbContainer extends Component {
   }
 }
 
-export default OmdbContainer;
+export default DirectoryContainer;
