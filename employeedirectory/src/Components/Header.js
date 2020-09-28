@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Navbar, Nav, NavDropdown, Form, FormControl, Button, Col, Table } from 'react-bootstrap';
 
-function Navbar() {
+function Header() {
     return (
         <div className="Navbar">
             <header className="Navbar-Header">
@@ -33,3 +33,5 @@ function Navbar() {
         </div>
     )
 }
+
+export default Header;

@@ -5,7 +5,7 @@ function Directory() {
     return (
         <div className="jumbotron text-center">
             <div className="jumbotron-body">
-                <Container fluid="xl">
+                <Container>
                     <Row className="text-center">
                         <Col>
                             <h1>
