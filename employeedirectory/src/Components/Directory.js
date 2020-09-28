@@ -1,5 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Table } from 'react-bootstrap';
+import axios from 'axios';
+
+const api = axios.create({
+    
+})
 
 function Directory() {
     return (
